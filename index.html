@@ -3,30 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cúspides - Escuela de alpinismo y formación de montaña">
-    <title>Cúspides | Escuela de Alpinismo y Expediciones de Montaña</title>
-    
-    <!-- CSS -->
+    <title>Cúspides - Escuela de Alpinismo y Formación de Montaña</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- ============ HEADER / NAVEGACIÓN ============ -->
-    <header class="header" id="header">
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
         <div class="header-container">
             <div class="logo">
                 <h1>Cúspides</h1>
             </div>
-            
-            <nav class="nav-menu" id="navMenu">
-                <a href="#inicio" class="nav-link">Inicio</a>
-                <a href="#servicios" class="nav-link">Servicios</a>
-                <a href="#expediciones" class="nav-link">Expediciones</a>
-                <a href="#instructores" class="nav-link">Instructores</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#expediciones">Expediciones</a></li>
+                    <li><a href="#comunidad">Comunidad</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
             </nav>
-
-            <button class="burger-menu" id="burgerMenu">
+            <button class="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -34,596 +31,586 @@
         </div>
     </header>
 
-    <!-- ============ HERO SECTION ============ -->
-    <section class="hero" id="inicio">
-        <!-- Preparado para video o imagen -->
-        <div class="hero-background">
-            <img src="assets/img/hero-bg.jpg" alt="Alpinista escalando en montaña" class="hero-image">
-            <!-- Para usar video en lugar de imagen, comentar img y descomentar video:
-            <video autoplay muted loop playsinline class="hero-video">
-                <source src="assets/video/hero.mp4" type="video/mp4">
-            </video>
-            -->
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <div class="hero-bg">
+            <!-- Imagen de fondo (preparada para video) -->
+            <img src="assets/img/hero-bg.jpg" alt="Alpinista en montaña" class="hero-image">
+            <!-- Para video descomenta: <video autoplay muted loop playsinline class="hero-video"><source src="assets/video/hero.mp4" type="video/mp4"></video> -->
         </div>
-
-        <div class="hero-overlay"></div>
-
         <div class="hero-content">
-            <h2 class="hero-title">Corre la distancia</h2>
-            <p class="hero-subtitle">Formación técnica para conquistar las cimas</p>
+            <h2 class="hero-title">Corre la distancia entre el sueño y la cumbre</h2>
+            <p class="hero-subtitle">Formación técnica, preparación integral y expediciones de alta exigencia</p>
             <a href="#contacto" class="btn btn-primary">Comenzar ahora</a>
         </div>
-    </section>
+        <div class="hero-overlay"></div>
 
-    <!-- ============ SECCIÓN 1: CARACTERÍSTICAS (4 CARDS) ============ -->
-    <section class="features-section">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏔️</div>
-                    <h3>Formación Técnica</h3>
-                    <p>Aprende las habilidades esenciales para escalar con seguridad y confianza en cualquier terreno.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">💪</div>
-                    <h3>Preparación Física</h3>
-                    <p>Entrenamientos diseñados para fortalecer tu cuerpo y mente ante los desafíos de la montaña.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Seguridad Garantizada</h3>
-                    <p>Protocolos rigurosos y equipamiento de última generación para expediciones sin riesgos innecesarios.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Comunidad Global</h3>
-                    <p>Únete a alpinistas y montañeros de todo el mundo compartiendo tu pasión por la naturaleza.</p>
+        <!-- 4 CARDS EN EL HERO -->
+        <div class="hero-cards">
+            <div class="container">
+                <div class="cards-grid cards-hero-services">
+                    <div class="card card-hero-service">
+                        <div class="card-icon">🎓</div>
+                        <h3>Formación Técnica</h3>
+                        <p>Cursos especializados en escalada, alpinismo y técnicas de seguridad</p>
+                    </div>
+                    <div class="card card-hero-service">
+                        <div class="card-icon">💪</div>
+                        <h3>Preparación Integral</h3>
+                        <p>Entrenamiento físico y mental para enfrentar los desafíos</p>
+                    </div>
+                    <div class="card card-hero-service">
+                        <div class="card-icon">🛡️</div>
+                        <h3>Seguridad Absoluta</h3>
+                        <p>Protocolos de seguridad rigurosos y equipo de última generación</p>
+                    </div>
+                    <div class="card card-hero-service">
+                        <div class="card-icon">🏔️</div>
+                        <h3>Comunidad Exclusiva</h3>
+                        <p>Red de alpinistas profesionales y apasionados por la montaña</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 2: BLOQUE TEXTO + IMAGEN ============ -->
-    <section class="service-block">
+    <!-- ==================== SECCIÓN: SERVICIO MONTAÑAS ==================== -->
+    <section class="section section-services" id="formacion">
         <div class="container">
-            <div class="service-content">
-                <div class="service-text">
-                    <h2>Al servicio de las montañas</h2>
-                    <p>En Cúspides creemos que la montaña no es solo un destino, es una escuela de vida. Cada expedición es una oportunidad para superarte, para entender tus límites y descubrir que puedes ir más allá.</p>
-                    <p>Nuestros programas combina la exigencia técnica con el respeto absoluto por la naturaleza. Cada paso es calculado, cada decisión es informada y cada cumbre es conquistada con profesionalismo.</p>
-                    <a href="#contacto" class="btn btn-secondary">Más información</a>
+            <div class="services-layout">
+                <div class="services-text">
+                    <h2>Al servicio de las montañas y el mundo</h2>
+                    <p>Desde 2010, Cúspides ha formado a cientos de alpinistas en técnicas de escalada, seguridad en montaña y preparación para grandes expediciones internacionales.</p>
+                    <p>Nuestro enfoque integral combina:</p>
+                    <ul class="services-list">
+                        <li>Formación técnica certificada</li>
+                        <li>Acondicionamiento físico personalizado</li>
+                        <li>Mentoría de guías de montaña profesionales</li>
+                        <li>Expediciones a picos de alta dificultad</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-secondary">Conocer programas</a>
                 </div>
-
-                <div class="service-image">
-                    <img src="assets/img/service-main.jpg" alt="Vistas panorámicas de montañas nevadas" class="lazy-image">
+                <div class="services-image">
+                    <img src="assets/img/service-hero.jpg" alt="Cascada en montaña" class="image-large">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 3: GALERÍA ASIMÉTRICA (5-6 IMÁGENES) ============ -->
-    <section class="gallery-asymmetric">
+    <!-- ==================== SECCIÓN: GALERÍA ASIMÉTRICA ==================== -->
+    <section class="section section-gallery-asymmetric">
         <div class="container">
-            <div class="gallery-grid">
-                <div class="gallery-item gallery-item-large">
-                    <img src="assets/img/gallery-1.jpg" alt="Alpinista en ruta de ascenso" class="lazy-image">
-                    <div class="gallery-caption">Entrenamiento avanzado</div>
+            <div class="asymmetric-grid">
+                <div class="asymmetric-item lg">
+                    <img src="assets/img/gallery-1.jpg" alt="Montaña con fuego" class="gallery-image">
                 </div>
-
-                <div class="gallery-item gallery-item-medium">
-                    <img src="assets/img/gallery-2.jpg" alt="Paisaje de montaña" class="lazy-image">
-                    <div class="gallery-caption">Paisajes icónicos</div>
+                <div class="asymmetric-item md">
+                    <img src="assets/img/gallery-2.jpg" alt="Montaña nevada" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Expedición Aconcagua</h3>
+                    </div>
                 </div>
-
-                <div class="gallery-item gallery-item-small">
-                    <img src="assets/img/gallery-3.jpg" alt="Equipo de montaña" class="lazy-image">
-                    <div class="gallery-caption">Equipamiento técnico</div>
+                <div class="asymmetric-item sm">
+                    <img src="assets/img/gallery-3.jpg" alt="Montaña rocosa" class="gallery-image">
                 </div>
-
-                <div class="gallery-item gallery-item-medium">
-                    <img src="assets/img/gallery-4.jpg" alt="Grupo en expedición" class="lazy-image">
-                    <div class="gallery-caption">Expediciones en grupo</div>
+                <div class="asymmetric-item sm">
+                    <img src="assets/img/gallery-4.jpg" alt="Formación en roca" class="gallery-image">
                 </div>
-
-                <div class="gallery-item gallery-item-small">
-                    <img src="assets/img/gallery-5.jpg" alt="Detalle de escalada" class="lazy-image">
-                    <div class="gallery-caption">Técnica de precisión</div>
-                </div>
-
-                <div class="gallery-item gallery-item-medium">
-                    <img src="assets/img/gallery-6.jpg" alt="Campamento en altura" class="lazy-image">
-                    <div class="gallery-caption">Aclimatación en altura</div>
+                <div class="asymmetric-item md">
+                    <img src="assets/img/gallery-5.jpg" alt="Vistas de montaña" class="gallery-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 4: ESTADÍSTICAS ============ -->
-    <section class="stats-section">
+    <!-- ==================== STATS ==================== -->
+    <section class="section section-stats">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item">
-                    <h3 class="stat-number">1,200+</h3>
-                    <p class="stat-label">Alpinistas Capacitados</p>
+                <div class="stat">
+                    <h3>14+</h3>
+                    <p>Años formando</p>
                 </div>
-
-                <div class="stat-item">
-                    <h3 class="stat-number">15 años</h3>
-                    <p class="stat-label">Experiencia en Montaña</p>
+                <div class="stat">
+                    <h3>2,250+</h3>
+                    <p>Alpinistas formados</p>
                 </div>
-
-                <div class="stat-item">
-                    <h3 class="stat-number">45+</h3>
-                    <p class="stat-label">Expediciones Completadas</p>
+                <div class="stat">
+                    <h3>180+</h3>
+                    <p>Expediciones realizadas</p>
                 </div>
-
-                <div class="stat-item">
-                    <h3 class="stat-number">100%</h3>
-                    <p class="stat-label">Tasa de Seguridad</p>
+                <div class="stat">
+                    <h3>99.8%</h3>
+                    <p>Tasa de seguridad</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 5: EXPERIENCIAS/CURSOS (4 CARDS) ============ -->
-    <section class="experiences-section" id="expediciones">
+    <!-- ==================== EXPERIENCIAS - 4 CARDS ==================== -->
+    <section class="section section-experiences" id="expediciones">
         <div class="container">
-            <h2 class="section-title">Nuestras Expediciones</h2>
-
-            <div class="experiences-grid">
-                <div class="experience-card">
+            <h2 class="section-title">Nuestras expediciones</h2>
+            <p class="section-subtitle">Viajes transformadores a los picos más desafiantes del mundo</p>
+            
+            <div class="cards-grid cards-experiences">
+                <div class="card card-experience card-active">
                     <div class="card-image">
-                        <img src="assets/img/exp-1.jpg" alt="Curso de escalada básica" class="lazy-image">
+                        <img src="assets/img/exp-1.jpg" alt="Expedición 1">
                     </div>
                     <div class="card-content">
-                        <h3>Escalada Básica</h3>
-                        <p>Introducción a técnicas fundamentales de escalada en roca y uso de equipamiento.</p>
-                        <div class="card-meta">
-                            <span class="duration">5 días</span>
-                            <span class="difficulty">Iniciante</span>
-                        </div>
-                        <a href="#contacto" class="btn btn-outline">Ver detalles</a>
+                        <h3>Aconcagua</h3>
+                        <p>6.961 m - Argentina</p>
+                        <p class="card-description">La montaña más alta de América del Sur. Ideal para iniciarse en el alpinismo de altura.</p>
                     </div>
                 </div>
-
-                <div class="experience-card">
+                <div class="card card-experience">
                     <div class="card-image">
-                        <img src="assets/img/exp-2.jpg" alt="Expedición de montaña intermedia" class="lazy-image">
+                        <img src="assets/img/exp-2.jpg" alt="Expedición 2">
                     </div>
                     <div class="card-content">
-                        <h3>Expedición Intermedia</h3>
-                        <p>Ascensos a cimas de 4000m+ con aclimatación y técnicas de altura.</p>
-                        <div class="card-meta">
-                            <span class="duration">10 días</span>
-                            <span class="difficulty">Intermedio</span>
-                        </div>
-                        <a href="#contacto" class="btn btn-outline">Ver detalles</a>
+                        <h3>Mont Blanc</h3>
+                        <p>4.808 m - Alpes</p>
+                        <p class="card-description">La cima de los Alpes. Escalada técnica y formación avanzada en glaciares.</p>
                     </div>
                 </div>
-
-                <div class="experience-card">
+                <div class="card card-experience">
                     <div class="card-image">
-                        <img src="assets/img/exp-3.jpg" alt="Expedición de montaña avanzada" class="lazy-image">
+                        <img src="assets/img/exp-3.jpg" alt="Expedición 3">
                     </div>
                     <div class="card-content">
-                        <h3>Expedición Avanzada</h3>
-                        <p>Ascensos a cimas de 6000m+ con entrenamiento de alpinismo de alta altitud.</p>
-                        <div class="card-meta">
-                            <span class="duration">20 días</span>
-                            <span class="difficulty">Avanzado</span>
-                        </div>
-                        <a href="#contacto" class="btn btn-outline">Ver detalles</a>
+                        <h3>Kilimanjaro</h3>
+                        <p>5.895 m - Tanzania</p>
+                        <p class="card-description">La montaña más alta de África. Trekking de alta altitud sin necesidad de escalada técnica.</p>
                     </div>
                 </div>
-
-                <div class="experience-card">
+                <div class="card card-experience">
                     <div class="card-image">
-                        <img src="assets/img/exp-4.jpg" alt="Expedición custom personalizada" class="lazy-image">
+                        <img src="assets/img/exp-4.jpg" alt="Expedición 4">
                     </div>
                     <div class="card-content">
-                        <h3>Expedición Custom</h3>
-                        <p>Programa personalizado según tus objetivos y nivel de experiencia.</p>
-                        <div class="card-meta">
-                            <span class="duration">A medida</span>
-                            <span class="difficulty">Variable</span>
-                        </div>
-                        <a href="#contacto" class="btn btn-outline">Ver detalles</a>
+                        <h3>Everest</h3>
+                        <p>8.849 m - Himalaya</p>
+                        <p class="card-description">El pico más alto del mundo. La expedición definitiva para alpinistas experimentados.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 6: GALERÍA DE FOTOS (GRID MASÓNICO) ============ -->
-    <section class="masonry-gallery">
+    <!-- ==================== GALERÍA MASÓNICA ==================== -->
+    <section class="section section-masonry">
         <div class="container">
+            <h2 class="section-title">Galería de vivencias</h2>
+            
             <div class="masonry-grid">
-                <div class="masonry-item">
-                    <img src="assets/img/masonry-1.jpg" alt="Atardecer en la montaña" class="lazy-image">
+                <div class="masonry-item item-lg">
+                    <img src="assets/img/masonry-1.jpg" alt="Vivencia 1" class="masonry-image">
+                    <div class="masonry-overlay">
+                        <p>Preparación en roca</p>
+                    </div>
                 </div>
                 <div class="masonry-item">
-                    <img src="assets/img/masonry-2.jpg" alt="Grupo en campamento" class="lazy-image">
+                    <img src="assets/img/masonry-2.jpg" alt="Vivencia 2" class="masonry-image">
                 </div>
                 <div class="masonry-item">
-                    <img src="assets/img/masonry-3.jpg" alt="Ruta de escalada" class="lazy-image">
+                    <img src="assets/img/masonry-3.jpg" alt="Vivencia 3" class="masonry-image">
                 </div>
                 <div class="masonry-item">
-                    <img src="assets/img/masonry-4.jpg" alt="Cima conquistada" class="lazy-image">
+                    <img src="assets/img/masonry-4.jpg" alt="Vivencia 4" class="masonry-image">
+                </div>
+                <div class="masonry-item item-lg">
+                    <img src="assets/img/masonry-5.jpg" alt="Vivencia 5" class="masonry-image">
+                    <div class="masonry-overlay">
+                        <p>En la cumbre</p>
+                    </div>
                 </div>
                 <div class="masonry-item">
-                    <img src="assets/img/masonry-5.jpg" alt="Entrenamiento en equipo" class="lazy-image">
+                    <img src="assets/img/masonry-6.jpg" alt="Vivencia 6" class="masonry-image">
                 </div>
                 <div class="masonry-item">
-                    <img src="assets/img/masonry-6.jpg" alt="Vistas panorámicas" class="lazy-image">
+                    <img src="assets/img/masonry-7.jpg" alt="Vivencia 7" class="masonry-image">
                 </div>
                 <div class="masonry-item">
-                    <img src="assets/img/masonry-7.jpg" alt="Descenso técnico" class="lazy-image">
-                </div>
-                <div class="masonry-item">
-                    <img src="assets/img/masonry-8.jpg" alt="Celebración en cima" class="lazy-image">
+                    <img src="assets/img/masonry-8.jpg" alt="Vivencia 8" class="masonry-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 7: BANNER OSCURO - BÚSQUEDA ============ -->
-    <section class="banner-dark banner-search">
+    <!-- ==================== SECCIÓN DARK - MARCAS PARTNER ==================== -->
+    <section class="section section-brands" id="comunidad">
         <div class="container">
-            <h2>¿No encontraste lo que buscas?</h2>
-            <p>Explora todas nuestras opciones y encuentra la expedición perfecta para ti</p>
-            <a href="#contacto" class="btn btn-primary">Explorar más</a>
-        </div>
-    </section>
-
-    <!-- ============ SECCIÓN 8: INSTRUCTORES/EQUIPOS (4 CARDS VERTICALES) ============ -->
-    <section class="team-section" id="instructores">
-        <div class="container">
-            <h2 class="section-title">Nuestro Equipo de Instructores</h2>
-
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/img/instructor-1.jpg" alt="Instructor de alpinismo" class="lazy-image">
-                    </div>
-                    <div class="team-content">
-                        <h3>Javier Montaña</h3>
-                        <p class="role">Especialista en Escalada</p>
-                        <p>+15 años de experiencia en ascensos técnicos y formación de alpinistas.</p>
-                    </div>
+            <h2 class="section-title">Marcas que confían en Cúspides</h2>
+            <p class="section-subtitle">Equipamiento y partners de excelencia en la industria del alpinismo</p>
+            
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <img src="assets/img/brand-1.png" alt="Brand 1" class="brand-logo">
                 </div>
-
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/img/instructor-2.jpg" alt="Instructor de montaña" class="lazy-image">
-                    </div>
-                    <div class="team-content">
-                        <h3>María Cumbres</h3>
-                        <p class="role">Preparadora Física</p>
-                        <p>Especialista en preparación y aclimatación para expediciones de alta altitud.</p>
-                    </div>
+                <div class="brand-item">
+                    <img src="assets/img/brand-2.png" alt="Brand 2" class="brand-logo">
                 </div>
-
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/img/instructor-3.jpg" alt="Guía de montaña" class="lazy-image">
-                    </div>
-                    <div class="team-content">
-                        <h3>Carlos Picos</h3>
-                        <p class="role">Guía Certificado</p>
-                        <p>Experto en rutas de montaña y protocolo de seguridad en expediciones.</p>
-                    </div>
+                <div class="brand-item">
+                    <img src="assets/img/brand-3.png" alt="Brand 3" class="brand-logo">
                 </div>
-
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/img/instructor-4.jpg" alt="Instructor de técnica" class="lazy-image">
-                    </div>
-                    <div class="team-content">
-                        <h3>Elena Roca</h3>
-                        <p class="role">Instructora de Técnica</p>
-                        <p>Especialista en rappel, aseguramiento y técnicas avanzadas de escalada.</p>
-                    </div>
+                <div class="brand-item">
+                    <img src="assets/img/brand-4.png" alt="Brand 4" class="brand-logo">
+                </div>
+                <div class="brand-item">
+                    <img src="assets/img/brand-5.png" alt="Brand 5" class="brand-logo">
+                </div>
+                <div class="brand-item">
+                    <img src="assets/img/brand-6.png" alt="Brand 6" class="brand-logo">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 9: VENTAJAS (3 ITEMS CON ICONOS) ============ -->
-    <section class="advantages-section">
+    <!-- ==================== TEAM / INSTRUCTORES - 4 CARDS ==================== -->
+    <section class="section section-team">
         <div class="container">
-            <div class="advantages-grid">
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
-                        </svg>
+            <h2 class="section-title">Nuestro equipo de guías</h2>
+            <p class="section-subtitle">Profesionales certificados con experiencia en las montañas más difíciles</p>
+            
+            <div class="cards-grid cards-team">
+                <div class="card card-team card-active">
+                    <div class="card-image">
+                        <img src="assets/img/guide-1.jpg" alt="Guía 1 - Carlos">
                     </div>
-                    <h3>Experiencia Comprobada</h3>
-                    <p>15 años formando alpinistas y guiando expediciones seguras en los picos más desafiantes del mundo.</p>
-                </div>
-
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
-                        </svg>
-                    </div>
-                    <h3>Seguridad Garantizada</h3>
-                    <p>Equipamiento de última generación, protocolos rigurosos y seguros de responsabilidad civil.</p>
-                </div>
-
-                <div class="advantage-item">
-                    <div class="advantage-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3>Comunidad Activa</h3>
-                    <p>Red global de alpinistas, mentorías continuas y eventos exclusivos para miembros.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ SECCIÓN 10: BANNER OSCURO FEATURED ============ -->
-    <section class="banner-featured">
-        <div class="container">
-            <div class="featured-content">
-                <div class="featured-text">
-                    <h2>Conquista el Aconcagua</h2>
-                    <p>Nuestro programa insignia: ascenso a la cima más alta de América del Sur (6.961 m) con entrenamiento completo y acompañamiento de instructores certificados.</p>
-                    <a href="#contacto" class="btn btn-primary">Solicitar información</a>
-                </div>
-                <div class="featured-image">
-                    <img src="assets/img/featured-peak.jpg" alt="Cumbre del Aconcagua" class="lazy-image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ SECCIÓN 11: CTA NARANJA ============ -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>¿Listo para alcanzar nuevas cimas?</h2>
-            <p>Comienza tu viaje hacia el alpinismo profesional hoy</p>
-            <a href="#contacto" class="btn btn-light">Comenzar formación</a>
-        </div>
-    </section>
-
-    <!-- ============ SECCIÓN 12: TESTIMONIOS / COMUNIDAD ============ -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title">Lo que dicen nuestros alpinistas</h2>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"Cúspides cambió mi forma de ver la montaña. Los instructores son profesionales de verdad y la seguridad es lo primero."</p>
-                    <p class="testimonial-author">- Lucas R., Córdoba</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"La mejor decisión fue unirme a la comunidad. No solo aprendí técnica, sino que encontré gente con la misma pasión."</p>
-                    <p class="testimonial-author">- Ana G., Buenos Aires</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"Desde principiante hasta escalar el Aconcagua en 6 meses. El programa es exigente pero totalmente transformador."</p>
-                    <p class="testimonial-author">- Martín T., Mendoza</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"La formación es integral: técnica, preparación física, seguridad. Recomiendo Cúspides sin dudas."</p>
-                    <p class="testimonial-author">- Sofía M., Rosario</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ SECCIÓN 13: FAQ ============ -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">Preguntas Frecuentes</h2>
-
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Necesito experiencia previa en alpinismo?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="faq-answer" style="display: none;">
-                        <p>No, ofrecemos programas desde principiantes hasta expertos. Evaluamos tu nivel y diseñamos un plan personalizado.</p>
+                    <div class="card-content">
+                        <h3>Carlos Mendoza</h3>
+                        <p class="card-role">Guía de Montaña Certificado IFMGA</p>
+                        <p class="card-description">20 años en expediciones de altura. Especialista en Aconcagua y Andinos.</p>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Cuál es el precio de las expediciones?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="faq-answer" style="display: none;">
-                        <p>Los precios varían según la expedición y duración. Contáctanos para una cotización personalizada sin compromiso.</p>
+                <div class="card card-team">
+                    <div class="card-image">
+                        <img src="assets/img/guide-2.jpg" alt="Guía 2 - María">
+                    </div>
+                    <div class="card-content">
+                        <h3>María González</h3>
+                        <p class="card-role">Instructora de Escalada</p>
+                        <p class="card-description">Campeona sudamericana de escalada. Especialista en técnica en roca.</p>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Qué incluye el equipamiento?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="faq-answer" style="display: none;">
-                        <p>Proveemos todo el equipamiento técnico de escalada, camping y seguridad. Solo debes traer ropa personal y artículos de higiene.</p>
+                <div class="card card-team">
+                    <div class="card-image">
+                        <img src="assets/img/guide-3.jpg" alt="Guía 3 - Luis">
+                    </div>
+                    <div class="card-content">
+                        <h3>Luis Rodríguez</h3>
+                        <p class="card-role">Preparador Físico</p>
+                        <p class="card-description">Especializado en preparación para alpinismo. Educador deportivo certificado.</p>
                     </div>
                 </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Hay garantía de seguro durante las expediciones?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="faq-answer" style="display: none;">
-                        <p>Sí, todos nuestros participantes están cubiertos por seguros de responsabilidad civil y accidentes personales.</p>
+                <div class="card card-team">
+                    <div class="card-image">
+                        <img src="assets/img/guide-4.jpg" alt="Guía 4 - Ana">
                     </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Cuándo son las próximas expediciones?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="faq-answer" style="display: none;">
-                        <p>Las expediciones se organizan durante todo el año. Consulta nuestro calendario y reserva tu lugar con 2 meses de anticipación.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        <span>¿Puedo realizar una expedición personalizada?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="faq-answer" style="display: none;">
-                        <p>Absolutamente. Diseñamos expediciones custom según tus objetivos, disponibilidad y presupuesto. Contáctanos para detalles.</p>
+                    <div class="card-content">
+                        <h3>Ana Cortés</h3>
+                        <p class="card-role">Médica de Montaña</p>
+                        <p class="card-description">Especialista en medicina de altura y primeros auxilios en entornos remotos.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 14: NEWSLETTER ============ -->
-    <section class="newsletter-section">
+    <!-- ==================== CARACTERÍSTICAS - 3 ITEMS ==================== -->
+    <section class="section section-features">
         <div class="container">
-            <div class="newsletter-content">
-                <h2>Mantente informado</h2>
-                <p>Recibe actualizaciones sobre nuevas expediciones y consejos de alpinismo</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3>Formación personalizada</h3>
+                    <p>Diseñamos programas adaptados a tu nivel, objetivos y disponibilidad. Desde principiante hasta expediciones de clase mundial.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3>Equipamiento profesional</h3>
+                    <p>Acceso a equipamiento de última generación. Todo el material necesario para entrenar y expedicionar con seguridad.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3>Seguimiento constante</h3>
+                    <p>Monitoreo de tu progreso, retroalimentación personalizada y apoyo continuo durante toda tu formación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA PRINCIPAL ==================== -->
+    <section class="section section-cta-primary">
+        <div class="container">
+            <h2>¿Listo para conquistar tu próxima cumbre?</h2>
+            <p>Comienza hoy tu formación en alpinismo y únete a la comunidad de Cúspides</p>
+            <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS - CARRUSEL 3 CARDS ==================== -->
+    <section class="section section-testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <h2 class="section-title">Lo que dicen nuestros alpinistas</h2>
+                <div class="testimonials-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">5.00 (28 reviews)</span>
+                </div>
+            </div>
+            
+            <div class="carousel-testimonials">
+                <button class="carousel-btn carousel-prev" aria-label="Anterior">←</button>
                 
-                <form class="newsletter-form" id="newsletterForm">
-                    <div class="form-group">
-                        <input type="email" placeholder="Tu email" required>
-                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">J</div>
+                        <h3>Juan Pérez</h3>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"La formación en Cúspides cambió mi vida. No solo aprendí técnica, sino también a superar mis propios límites en montaña."</p>
+                        <a href="#" class="testimonial-link">Leer más</a>
+                        <p class="testimonial-trip">Aconcagua 2023</p>
                     </div>
-                </form>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">S</div>
+                        <h3>Sofia Martínez</h3>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Guías profesionales, equipamiento de clase mundial y una comunidad increíble. Totalmente recomendado para cualquier nivel."</p>
+                        <a href="#" class="testimonial-link">Leer más</a>
+                        <p class="testimonial-trip">Mont Blanc 2023</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">R</div>
+                        <h3>Roberto García</h3>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Conquisté el Kilimanjaro gracias a la preparación integral de Cúspides. Una experiencia transformadora que no olvidaré."</p>
+                        <a href="#" class="testimonial-link">Leer más</a>
+                        <p class="testimonial-trip">Kilimanjaro 2024</p>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-next" aria-label="Siguiente">→</button>
+            </div>
 
-                <p class="newsletter-disclaimer">No compartimos tu email. Puedes desuscribirse en cualquier momento.</p>
+            <div class="testimonials-footer">
+                <a href="#" class="btn btn-secondary">Ver todos los reviews</a>
             </div>
         </div>
     </section>
 
-    <!-- ============ SECCIÓN 15: CONTACTO ============ -->
-    <section class="contact-section" id="contacto">
+    <!-- ==================== SECCIÓN DARK CTA ==================== -->
+    <section class="section section-dark-cta">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Contacta con nosotros</h2>
-                    <p>¿Tienes preguntas? Nos encantaría escucharte. Envía tu mensaje y nos pondremos en contacto pronto.</p>
+            <h2>¿Preguntas sobre nuestros programas?</h2>
+            <p>Contáctanos y te asesoraremos para encontrar la formación perfecta para ti</p>
+            <a href="#contacto" class="btn btn-light">Hablar con un asesor</a>
+        </div>
+    </section>
 
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <h4>📧 Email</h4>
-                            <a href="mailto:info@cuspides.com">info@cuspides.com</a>
+    <!-- ==================== ARTÍCULOS Y SEMINARIOS - CARRUSEL ==================== -->
+    <section class="section section-articles">
+        <div class="container">
+            <h2 class="section-title">Artículos y Seminarios</h2>
+            <p class="section-subtitle">Aprende de expertos en la industria del alpinismo</p>
+            
+            <div class="carousel-articles">
+                <button class="carousel-btn carousel-prev" aria-label="Anterior">←</button>
+                
+                <div class="articles-grid">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="assets/img/article-1.jpg" alt="Artículo 1">
                         </div>
-
-                        <div class="contact-method">
-                            <h4>📱 WhatsApp</h4>
-                            <a href="https://wa.me/5491234567890" target="_blank">+54 9 1234-567890</a>
+                        <div class="article-content">
+                            <h3>Técnicas de Rappel Seguro</h3>
+                            <p>Dominá los fundamentos del rappel en roca</p>
+                            <a href="#" class="article-link">Leer →</a>
                         </div>
-
-                        <div class="contact-method">
-                            <h4>📍 Ubicación</h4>
-                            <p>Mendoza, Argentina</p>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="assets/img/article-2.jpg" alt="Artículo 2">
                         </div>
-
-                        <div class="contact-method">
-                            <h4>🕐 Horarios</h4>
-                            <p>Lun-Vie: 9:00 - 18:00<br>Sáb-Dom: Consultar</p>
+                        <div class="article-content">
+                            <h3>Preparación para la Altura</h3>
+                            <p>Aclimatación y entrenamiento en altura</p>
+                            <a href="#" class="article-link">Leer →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="assets/img/article-3.jpg" alt="Artículo 3">
+                        </div>
+                        <div class="article-content">
+                            <h3>Nutrición en Montaña</h3>
+                            <p>Alimentación estratégica para expediciones</p>
+                            <a href="#" class="article-link">Leer →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="assets/img/article-4.jpg" alt="Artículo 4">
+                        </div>
+                        <div class="article-content">
+                            <h3>Gestión del Miedo</h3>
+                            <p>Psicología del alpinismo de altura</p>
+                            <a href="#" class="article-link">Leer →</a>
                         </div>
                     </div>
 
-                    <!-- Redes sociales -->
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
-                        <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
-                        <a href="#" class="social-link" aria-label="YouTube">YouTube</a>
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="assets/img/article-5.jpg" alt="Artículo 5">
+                        </div>
+                        <div class="article-content">
+                            <h3>Equipamiento Esencial</h3>
+                            <p>Guía completa de gear para alpinismo</p>
+                            <a href="#" class="article-link">Leer →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-next" aria-label="Siguiente">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section section-faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas frecuentes</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuál es el nivel de experiencia requerido?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No necesitas experiencia previa. Ofrecemos cursos desde nivel iniciante hasta programas avanzados. Evaluamos tu nivel y diseñamos un programa personalizado.</p>
                     </div>
                 </div>
 
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué incluyen los programas de formación?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Incluyen clases técnicas, entrenamientos físicos, material teórico, y en algunos casos expediciones. Todo coordinado con guías certificados.</p>
+                    </div>
+                </div>
 
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuál es la duración típica de una expedición?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Varían según el pico. Aconcagua requiere 14-16 días, Mont Blanc 5-7 días. Podemos adaptar duraciones según disponibilidad.</p>
+                    </div>
+                </div>
 
-                        <div class="form-group">
-                            <label for="phone">Teléfono (opcional)</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Selecciona un asunto</option>
-                                <option value="info">Información general</option>
-                                <option value="expedicion">Consulta sobre expedición</option>
-                                <option value="precio">Consulta de precios</option>
-                                <option value="custom">Expedición personalizada</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                        <p class="form-note">Te responderemos en las próximas 24 horas.</p>
-                    </form>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué políticas de cancelación tienen?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrecemos reembolso completo si cancelas con más de 30 días de anticipación. Consulta nuestras condiciones completas.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ FOOTER ============ -->
+    <!-- ==================== CONTACTO ==================== -->
+    <section class="section section-contact" id="contacto">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Únete a Cúspides</h2>
+                    <p class="contact-subtitle">Cuéntanos sobre tus objetivos en la montaña y te ayudaremos a planificar tu próxima aventura</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <p><strong>Email:</strong></p>
+                            <p><a href="mailto:info@cuspides.com">info@cuspides.com</a></p>
+                        </div>
+                        <div class="contact-detail">
+                            <p><strong>WhatsApp:</strong></p>
+                            <p><a href="https://wa.me/541234567890" target="_blank">+54 9 11 2345-6789</a></p>
+                        </div>
+                        <div class="contact-detail">
+                            <p><strong>Teléfono:</strong></p>
+                            <p><a href="tel:+541234567890">+54 11 2345-6789</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">¿En qué formación estás interesado?</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="escalada">Escalada en roca</option>
+                            <option value="alpinismo">Alpinismo</option>
+                            <option value="aconcagua">Expedición Aconcagua</option>
+                            <option value="montblanc">Expedición Mont Blanc</option>
+                            <option value="kilimanjaro">Expedición Kilimanjaro</option>
+                            <option value="everest">Expedición Everest</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-content">
                 <div class="footer-section">
                     <h3>Cúspides</h3>
-                    <p>Escuela de alpinismo y formación de montaña. Conquistamos cimas, construimos alpinistas.</p>
+                    <p>Escuela de alpinismo y formación de montaña. Formamos expedicionarios desde 2010.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
                 </div>
 
                 <div class="footer-section">
-                    <h4>Explorar</h4>
+                    <h4>Navegación</h4>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#formacion">Formación</a></li>
                         <li><a href="#expediciones">Expediciones</a></li>
-                        <li><a href="#instructores">Instructores</a></li>
+                        <li><a href="#comunidad">Comunidad</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -631,41 +618,29 @@
                 <div class="footer-section">
                     <h4>Recursos</h4>
                     <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Guías de montaña</a></li>
+                        <li><a href="#">Guía de preparación</a></li>
                         <li><a href="#">Equipamiento</a></li>
-                        <li><a href="#">Comunidad</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Certificaciones</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Términos y condiciones</a></li>
                         <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Aviso legal</a></li>
                     </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <div class="footer-socials">
-                        <a href="#" class="social-icon">f</a>
-                        <a href="#" class="social-icon">i</a>
-                        <a href="#" class="social-icon">y</a>
-                        <a href="#" class="social-icon">in</a>
-                    </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Cúspides. Todos los derechos reservados.</p>
-                <p>Hecho con pasión por la montaña 🏔️</p>
+                <p>&copy; 2024 Cúspides - Escuela de Alpinismo. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 </html>
